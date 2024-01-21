@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="CSS/librairies.css">
+    <title>Librairies</title>
+</head>
+
+<header>
+    <!-- SLIDER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="slide-hmc">
+                <div class="subtitle">
+                    Ghibli Studio, 2001
+                </div>
+                <div class="title">
+                    Howl's Moving Castle
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-vdc">
+                <div class="subtitle">
+                    Ghibli Studio, 2006
+                </div>
+                <div class="title">
+                    Spirited Away
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-mvt">
+                <div class="subtitle">
+                    Ghibli Studio, 2004
+                </div>
+                <div class="title">
+                    My Neighbor Totoro
+                </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+</header>
+
+<!--===========================================================================================================================================================-->
+
+
+
+<body>
+
+  <!-- MENU DE NAVIGATION-->
+
+    <nav>
+        <a href ="index.html"> Accueil </a>
+        <a href="personnages.html" id="active">Personnages</a>
+        <a href="formulaire.html">Newsletter</a>
+    </nav>
+
+  <!--CARTES PORTFOLIO-->
+
+    <main class="portfolio">
+        <div class="portfolio-elements">
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Chihiro</p>
+                    <p class="card-axe">Spirited Away</p>
+                </div>
+                <a href="IMG/pfp.jpeg">
+                    <img src="IMG/pfp.jpeg" alt="Spirited Away">
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Kanohashi</p>
+                    <p class="card-axe">Spirited Away</p>
+                </div>
+                <a href="IMG/no-face.webp">
+                    <img src="IMG/no-face.webp" alt="Room">
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Howl Pendragon</p>
+                    <p class="card-axe">Howl's Moving Castle</p>
+                </div>
+                <a href="IMG/howl.jpeg">
+                    <img src="IMG/howl.jpeg" alt="Howl">
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Sophie</p>
+                    <p class="card-axe">Howl's Moving Castle</p>
+                </div>
+                <a href="IMG/sophie.jpg">
+                    <img src="IMG/sophie.jpg" alt="Sophie">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="menu-burger">
+        <section class="accordeon">
+            <div class="titre">
+                <p>Nos évènements</p>
+                <img class="fleche" src="IMG/chevron.svg" alt ="Fleche">
+                
+            </div>  
+            
+            <div class="contenu">
+                <ul>
+                    <li>Giveaway</li>
+                    <li>Projections en plein air</li>
+                    <li>Conventions</li>
+                    <li>Festivals</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section class="accordeon">
+            <div class="titre">
+                <p>Merch</p>
+                <img class="fleche" src ="IMG/chevron.svg" alt ="Fleche">
+                
+            </div>
+        
+            <div class="contenu">
+                <ul>
+                    <li>Tote bag</li>
+                    <li>Coques de téléphone</li>
+                    <li>Sweatshirts</li>
+                    <li>Peluches</li>
+                    <li>Figurines</li>
+                </ul>
+            </div>
+        
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="mode">
+            <button> Dark mode </button>
+        </div>
+    </footer>
+    
+    
+    <!-- Ajout des scripts (JS )-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="JS/librairie.js"></script>
+
+    <!-- JS SWIPER -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
+
+</body>
+</html>

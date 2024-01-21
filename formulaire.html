@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="CSS/librairies.css">
+    <title>Librairies</title>
+</head>
+
+<header>
+    <!-- SLIDER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="slide-hmc">
+                <div class="subtitle">
+                    Ghibli Studio, 2001
+                </div>
+                <div class="title">
+                    Howl's Moving Castle
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-vdc">
+                <div class="subtitle">
+                    Ghibli Studio, 2006
+                </div>
+                <div class="title">
+                    Spirited Away
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-mvt">
+                <div class="subtitle">
+                    Ghibli Studio, 2004
+                </div>
+                <div class="title">
+                    My Neighbor Totoro
+                </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+</header>
+
+<!--===========================================================================================================================================================-->
+
+
+<body>
+
+  <!-- MENU DE NAVIGATION-->
+
+    <nav>
+        <a href ="index.html"> Accueil </a>
+        <a href="personnages.html">Personnages</a>
+        <a href="formulaire.html" id="active">Newsletter</a>
+    </nav>
+
+
+
+
+
+
+
+
+<main>
+    <!-- FORMULAIRE D'INSCRIPTION AUX JPO-->
+
+    <div class="message-error">
+        <ul></ul>
+    </div>
+    <div class="message-success">
+        <ul></ul>
+    </div>
+
+
+<div class = "formulaire">
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        
+        <!--renseignement nom prénom-->
+        <div class="identite">
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+            </div>
+    
+        </div>
+        
+
+        <!--renseignement Email-->
+        <div class="identite">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Numéro de téléphone</label>
+                <input type="phone" name="phone" id="phone">
+            </div>
+        </div>
+
+
+        <!--Préférence contact-->
+        <div>
+            <label for="contact">Souhaitez-vous recevoir des informations concernant les films/évènements à venir ?</label>
+            <div  class="classe">
+                <div>
+                    <input type="radio" id="non" name="contact"> 
+                    <label> Oui </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="non" name="contact">
+                    <label>Non</label>
+                </div>
+        </div>
+
+        <div>
+            <label for="classe">Êtes vous un homme, une femme...?</label>
+            <select name="axe" id="axe">
+                <option value="">--</option>
+                <option value="h">Homme</option>
+                <option value="f">Femme</option>
+                <option value="o">Autre</option>
+                <option value="n">Ne préfère pas répondre</option>
+               
+              </select>
+        </div>
+
+        <button type="submit"> S'incrire </button>
+    </form>
+
+</div>
+
+<!-- TAB pour expliquer les différents axes-->
+<div class="tab">
+    <ul class="nav-tab">
+        <li class="tab-nav tab-active CDEB">Studio Ghibli</li>
+        <li class="tab-nav CDI">Voice Actors</li>
+        <li class="tab-nav ANIM">D'autres liens...</li>
+    </ul>
+  
+    <!-- Tab content -->
+    <div class="tab-content CDEB">
+        <h3>Studio Ghibli</h3>
+        <p>Alors que le Japon est traditionnellement plus friand de formats courts en ce qui concerne l’animation (animes, OAV…), le Studio Ghibli a su imposer le long-métrage au fil des années. 
+            <br><br><br>
+            Né en 1985 à Tokyo, le Studio Ghibli est fondé par deux maîtres de l’animation japonaise, Hayao Miyazaki et Isao Takahata, ainsi que le producteur Toshio Suzuki, avec l’appui de Tokuma Shôten, maison d’édition du magazine Animage. À cette époque, l’un des grands films qu’on attribue au Studio, Nausicaa de la Vallée du Vent, était en fait déjà sorti. C’est son succès qui est à l’origine de la création du studio.
+            <br><br><br>
+            Le nom de "Ghibli" a été choisi par Hayao Miyazaki. C’est un mot italien qui fait référence au vent chaud qui souffle dans le désert de Lybie. Le studio avait en effet pour ambition d’insuffler "un vent nouveau à l’industrie de l’animation". Ce nom est également celui d’un avion italien, ce qui corrobore la passion pour l’aviation de Miyazaki.
+            <br><br><br><br><br>
+            <a href="https://www.japan-experience.com/fr/preparer-voyage/savoir/films-japonais/studio-ghibli-cinema-japonais"> Consulter l'article entier</a>
+        </p>
+    </div>
+  
+    <div class="tab-content CDI">
+        <h3>Voice Actors</h3>
+        <p<a href="https://ghibli.fandom.com/wiki/List_of_Japanese_voice_actors_and_actresses"> Consulter la liste complète ici</a></p>
+    </div>
+
+    <div class="tab-content ANIM">
+        <h3>Où les regarder ?</h3>
+        <p> Il existe des DVD, des Blu-Ray, comme pour la plupart des films. Mais les films Ghibli sont également disponibles sur les services de streaming comme Netflix. <br><br><br>
+        Si vous voulez également les regarder à plusieurs, en dehors de chez vous, ils sont parfois rediffusés dans les cinémas  français. <br><br><br>
+        De plus, nous organisons des projections en plain air, notamment en été. pour recevoir les infos concernant cest évènements, n'hésitez pas à vous abonner à notre Newsletter.</p>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div id="mode">
+        <button> Dark mode </button>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+<script src="JS/formulaire.js"></script>
+
+<!-- JS SWIPER -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>

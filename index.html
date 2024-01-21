@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="CSS/librairies.css">
+    <title>Librairies</title>
+</head>
+
+<header>
+    <!-- SLIDER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="slide-hmc">
+                <div class="subtitle">
+                    Ghibli Studio, 2001
+                </div>
+                <div class="title">
+                    Howl's Moving Castle
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-vdc">
+                <div class="subtitle">
+                    Ghibli Studio, 2006
+                </div>
+                <div class="title">
+                    Spirited Away
+                </div>
+          </div>
+
+
+          <div class="swiper-slide" id="slide-mvt">
+                <div class="subtitle">
+                    Ghibli Studio, 2004
+                </div>
+                <div class="title">
+                    My Neighbor Totoro
+                </div>
+          </div>
+          
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+</header>
+
+<!--===========================================================================================================================================================-->
+
+
+
+<body>
+
+  <!-- MENU DE NAVIGATION-->
+
+    <nav>
+        <a href ="index.html"> Accueil </a>
+        <a href="personnages.html" id="active">Personnages</a>
+        <a href="formulaire.html">Newsletter</a>
+    </nav>
+
+  <!--CARTES PORTFOLIO-->
+
+    <main class="portfolio">
+        <section>
+            <h1> Découvrez...</h1><br>
+            <p>L'univers magique de Hayao Miyazaki, célèbre prodcteur japonais, directeur
+                des Studio d'animation Ghibli. Vous avez déjà du apercevoir, ou au moins
+                entendr parler d'une de ses oeuvres.<br><br>
+                La plus récente, <strong>Le Garçon et le Héron</strong> lui a valu de nombreux
+                prix cinématiques. Comme à chaque sortie de ses films...
+            </p>
+        </section>
+
+        <br><br><br>
+
+        <section>
+            <h1> Suivez-nous ! </h1><br>
+            <p>Abonnez-vous à notre <strong><a href = "formulaire.html">Newsletter</a> </strong>
+                pour plus d'infos, des évènements, ainsi que des giveaway.
+            </p>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div id="mode">
+            <button> Dark mode </button>
+        </div>
+    </footer>
+    
+    <!-- Ajout des scripts (JS )-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="JS/librairie.js"></script>
+
+    <!-- JS SWIPER -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
+
+</body>
+</html>
